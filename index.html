@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Player</title>
+</head>
+
+<body>
+    <div style="width:345px;height:496px;background:#111">
+        <div style="width:15px;height:270px;border:1px solid black;margin-left:1px;position:absolute;background:#444"></div>
+        <div style="width:320px;height:270px;background:black;margin-left:20px;position:absolute">
+
+            <video width="100%" height="100%" src="http://www.youtube.com/uploads/video.mp4" id="video">
+   
+</video>
+        </div>
+        <div style="width:120px;height:190px;background:#222;position:absolute;margin-top:300px;overflow-y:scroll;color:cyan">
+            <p class="p" style="margin-left:2px" onclick="document.getElementById('inp').value='default'">*Default</p>
+        </div>
+        <div style="width:200px;height:190px;background:#222;position:relative;margin-top:300px;float:right">
+            <center><input type="text" disabled style="border:none;background:#444;height:40px;width:90px;border:1px solid green;border-radius:4px;margin-top:5px;color:green" id='inp' /></center>
+            <div style="position:absolute;width:50px;height:50px;border-radius:45%;background:cyan;border:1px solid green;align-items:center;margin-left:70px;margin-top:30px" onclick="document.getElementById('video').play();document.getElementById('video').style.display='block'">
+                <center>
+                    <p style="font-weight:bold;">Play</p>
+                </center>
+            </div>
+
+            <div style="width:40px;height:20px;background:indigo;border:1px solid green;border-radius:3px;margin-top:100px;margin-left:2px">
+
+                <p style="color:white;position:relative;text-align:center;margin-top:1px">
+                    <</p>
+            </div>
+
+            <div style="width:40px;height:20px;background:indigo;border:1px solid green;border-radius:3px;margin-top:-21px;margin-left:76px" onclick="document.getElementById('video').pause()">
+                <p style="color:white;position:relative;text-align:center;margin-top:1px">||</p>
+            </div>
+
+            <div style="width:40px;height:20px;background:indigo;border:1px solid green;border-radius:3px;margin-top:-22px;margin-left:156px">
+                <p style="color:white;position:relative;text-align:center;margin-top:1px">></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
